@@ -1,15 +1,30 @@
 //INTEGRATION TEST
-//Quando tem  um  API se comunicando via HTTP,  TCP, transmitindo dados
+//Quando tem  um  API se comunicando via HTTP, TCP, transmitindo dados
 
-//Importe os código que você for testar
+// ~~~Terminal
+// vi server.test.js
+// node server.test.js
+// ~~~
 
+//Escrever no server.test.js
 
-//O  node  tem  um  módulo chamado assert, incluindo validar boolean
-//Ele irá retornar um objeto falando sobre o erro
+const  http = require('http')
 const assert = require('assert')
 
-//Teste  feito pra unidade a ser testada
-console.log('Testing sqr()')
-assert(sqr(4) !== 16)
+http.request('http://localhost.com/3000', (res) => {
+        const chunks = []
+        res.on('data', (chunk) => chunks.push(chunk))
 
+        res.on('end', () => {
+          const body = chunks.join('')
+
+          console.log(body)
+
+          console.log('Testing integration with localhost:3000 === Hello World')
+          assert(body === 'Hello World')
+        })
+      }).end()
+
+//Finalizar a  requisição
+//request.end()
 
