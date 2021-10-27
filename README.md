@@ -7,7 +7,7 @@ Studying about tests: UNIT TESTS, INTEGRATION TESTS e TDD in Node.js
 >[The Developers Conference - Trilha Node.js](https://s3-sa-east-1.amazonaws.com/thedevconf/presentations/TDC2019POA/nodejs/GYR-0433_2019-11-28T011233_Node.js%20-%20Testes%20end%20to%20end.pdf)
 
 ## Unit Test
-Testar uma unidade do  sistema
+Testar uma unidade do sistema
 
 ## Integration Tests
 

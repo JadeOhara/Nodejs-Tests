@@ -1,7 +1,7 @@
 //UNIT TEST
 //Testar uma unidade do  sistema
 
-// Um teste será feito abaixo do outro, ao  retornar o erro a leitura para
+//Um teste será feito abaixo do outro, ao  retornar o erro a leitura para
 
 //Importe os código que você for testar
 const sqr = require('./functions')
