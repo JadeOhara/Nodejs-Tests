@@ -11,6 +11,8 @@ Testar uma unidade do sistema
 
 ## Integration Tests
 
+Quando tem  um  API se comunicando via HTTP, TCP, transmitindo dados
+
 ## TDD
 
 ## Como testar
