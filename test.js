@@ -1,10 +1,6 @@
-//UNIT TEST
-//Testar uma unidade do  sistema
+//Como fazer um teste
 
 //Um teste será feito abaixo do outro, ao  retornar o erro a leitura para
-
-//Importe os código que você for testar
-const sqr = require('./functions')
 
 function assert(value){
   if (!value) {  throw new Error('Invalid value') }
@@ -26,4 +22,5 @@ assert(1 === 2)
 console.log('Testing sqr()')
 assert(sqr(4) === 16)
 
-
+//Uma função pode ser declarada depois do teste pois ela tem prioridade na execução
+function sqr(number) { return number * number}
